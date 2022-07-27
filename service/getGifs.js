@@ -1,4 +1,4 @@
-import { API_KEY } from '../config.js'
+import { API_KEY } from './config.js'
 
 export default function getGifs({ keyword = 'pokemon' } = {}) {
 	const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=10&offset=0&rating=g&lang=en`
